@@ -26,7 +26,14 @@ This project is NOT affiliated with, endorsed by, or connected to Netflix.
 - Add hardcoded values to the constants file
 - Register for TMDB API & create an app & get access token
 - Get data from TMDB now playing movies list API
-
+- Custom Hokk for Now Playing Movies
+- Create a movieSlice
+- Update Store with movies Data
+- Planning for MainContainer & Secondary container
+- Fetch Data for Trailer video Data
+- Update Store with trailer video data
+- Embedded the youtube video and make it autoplay and mute
+- Tailwind classes to make Main container it look awesome
 
 # Features
 - Login/Sign up
