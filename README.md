@@ -26,7 +26,7 @@ This project is NOT affiliated with, endorsed by, or connected to Netflix.
 - Add hardcoded values to the constants file
 - Register for TMDB API & create an app & get access token
 - Get data from TMDB now playing movies list API
-- Custom Hokk for Now Playing Movies
+- Custom Hook for Now Playing Movies
 - Create a movieSlice
 - Update Store with movies Data
 - Planning for MainContainer & Secondary container
@@ -34,6 +34,12 @@ This project is NOT affiliated with, endorsed by, or connected to Netflix.
 - Update Store with trailer video data
 - Embedded the youtube video and make it autoplay and mute
 - Tailwind classes to make Main container it look awesome
+- Build Secondary Components
+- Build MovieList
+- Build MovieCard
+- TMDB Image CDN URL
+- Made the Browse Page amzing with Tailwind CSS
+- USe the custom hooks for TopRated, Popular and upcoming movies
 
 # Features
 - Login/Sign up
