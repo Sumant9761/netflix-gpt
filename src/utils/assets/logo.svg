@@ -1,0 +1,7 @@
+<svg width="900" height="260" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="260" fill="#0B0B1E"></rect>
+  <text x="450" y="165" text-anchor="middle" font-size="120" font-family="Montserrat, Poppins, Arial Black, sans-serif" font-weight="900" letter-spacing="3" fill="#EDE9FE">
+    Filmora<tspan fill="#7C3AED">X</tspan>
+  </text>
+  <line x1="220" y1="195" x2="680" y2="195" stroke="#A78BFA" stroke-width="3" opacity="0.6"></line>
+</svg>

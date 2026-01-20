@@ -1,9 +1,4 @@
-# MOVIE-GPT
-
-## Disclaimer
-This is a demo project created for educational purposes only.
-This project is NOT affiliated with, endorsed by, or connected to Netflix.
-
+# FilmoraX
 
 - Create React App
 - Configured TailwindCSS
@@ -52,6 +47,6 @@ This project is NOT affiliated with, endorsed by, or connected to Netflix.
         - Title & Description 
         - MovieSuggestions
             - MovieLists * N
-- MOVIEGPT
+- FilmoraX
   - Search BAr
   - Movie Suggestions 
