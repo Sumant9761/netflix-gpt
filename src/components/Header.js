@@ -72,10 +72,10 @@ const Header = () => {
             </select>
           )}
           <button
-            className="bg-gradient-to-r from-gray-900 from-0% to-violet-900 to- text-white px-2 py-2 m-2 rounded-md text-sm font-semibold transition"
+            className="bg-gradient-to-r from-gray-900 from-0% to-violet-900 to- text-white px-4 py-2 m-2 rounded-md text-sm font-semibold transition"
             onClick={handleGPTSearch}
           >
-            {showGptSearch ? "HomePage" : "GPT Search"}
+            {showGptSearch ? "🏠" : "GPT Search"}
           </button>
           <img
             className="w-10 h-10 rounded-lg"

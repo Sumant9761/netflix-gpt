@@ -21,5 +21,14 @@ export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500/";
 export const SUPPORTED_LANGUAGES = [
   { identifier: "en", name: "English" },
   { identifier: "hindi", name: "Hindi" },
-  { identifier: "spanish", name: "Spanish" },
+  { identifier: "german", name: "German" },
+  { identifier: "french", name: "French" },
+  { identifier: "japanese", name: "Japanese" },
+  { identifier: "italian", name: "Italian" },
+  { identifier: "chinese", name: "Chinese" },
 ];
+
+export const OPENAI_KEY =
+  "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";
+
+export const Ai_Model = "llama-3.1-8b-instant";
