@@ -1,13 +1,13 @@
 import GPTMovieSuggestions from "./GPTMovieSuggestions";
 import GPTSearchBar from "./GPTSearchBar";
-import { BACKGROUND_LOGO } from "../utils/constants";
+import { BACKGROUND_2 } from "../utils/constants";
 
 const GPTSearch = () => {
   return (
     <div>
       <div className="fixed inset-0 -z-10">
         <img
-          src={BACKGROUND_LOGO}
+          src={BACKGROUND_2}
           alt="Logo"
           className="w-full h-full object-cover"
         />

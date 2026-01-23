@@ -11,12 +11,14 @@ export const API_OPTIONS = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwYTJiZTliZDI3ODgyYzU4NWFiNzYxZDRmNWU1ZTY3MCIsIm5iZiI6MTc2ODczMzk3Ny45MzEsInN1YiI6IjY5NmNiZDE5MDFiNGY5MDA5YzY4OWNkYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.J4QhQgBzEANUinzhnA2ejljdqREgqjREFySZ10zTNa4",
+    Authorization: "Bearer " + process.env.REACT_APP_TMDB_KEY,
   },
 };
 
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500/";
+
+export const BACKGROUND_2 =
+  "https://raw.githubusercontent.com/Sumant9761/FilmoraX/refs/heads/main/src/utils/assets/background2.png";
 
 export const SUPPORTED_LANGUAGES = [
   { identifier: "en", name: "English" },
@@ -28,7 +30,6 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "chinese", name: "Chinese" },
 ];
 
-export const OPENAI_KEY =
-  "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";
+export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
 
 export const Ai_Model = "llama-3.1-8b-instant";
