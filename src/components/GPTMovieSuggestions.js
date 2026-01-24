@@ -7,8 +7,15 @@ const GPTMovieSuggestions = () => {
 
 
   return (
-    <div className="relative p-4 m-4 mt-10 bg-black text-white bg-opacity-60 ">
-      <div>
+    <div className="
+      relative
+      w-full
+      px-2 sm:px-4 md:px-6
+      mt-6 sm:mt-8 md:mt-10
+      bg-black bg-opacity-70
+      text-white
+    ">
+      <div className="max-w-[1600px] mx-auto">
         {movieNames.map((movieName, index) => (
           <MovieList
             key={movieName}

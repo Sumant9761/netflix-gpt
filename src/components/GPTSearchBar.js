@@ -47,7 +47,6 @@ const GPTSearchBar = () => {
       // TODO: Write error Handling
     }
 
-
     const gptMovies = gptResults.choices?.[0]?.message?.content
       .split(",")
       .map((movie) => movie.trim())
@@ -57,8 +56,7 @@ const GPTSearchBar = () => {
 
     const promiseArray = gptMovies.map((movie) => searchMovieTMDB(movie));
 
-    const tmdbResults = (await Promise.all(promiseArray));
-
+    const tmdbResults = await Promise.all(promiseArray);
 
     dispatch(
       addGptMovieResult({ movieNames: gptMovies, movieResults: tmdbResults }),
@@ -66,20 +64,46 @@ const GPTSearchBar = () => {
   };
 
   return (
-    <div className="pt-[10%] flex justify-center">
+    <div className="w-full flex justify-center px-3 sm:px-4 mt-24 sm:mt-28">
       <form
-        className=" w-1/2 bg-gray-800 grid grid-cols-12 rounded-lg"
+        className="
+        w-full 
+        sm:w-[90%] md:w-3/4 lg:w-1/2 
+        bg-gray-800 
+        rounded-xl
+        flex items-center
+        gap-2 p-2 sm:p-3 md:p-4
+      "
         onSubmit={(e) => e.preventDefault()}
       >
         <input
           ref={searchText}
           type="text"
-          className="p-4 m-4 col-span-10 rounded-lg"
+          className="
+          flex-1
+          px-3 py-2 sm:px-4 sm:py-3
+          rounded-lg
+          text-sm sm:text-base
+          outline-none
+          bg-white
+          text-black
+        "
           placeholder={lang[langKey].gptSearchPlaceholder}
         />
         <button
-          className="col-span-2 m-4 bg-gradient-to-r from-gray-900 from-0% to-violet-900 to- text-white px-4 py-2 rounded-md text-sm font-semibold transition-all duration-200 hover:scale-105 hover:shadow-lg
-            active:scale-95"
+          className="
+          shrink-0
+          px-3 sm:px-4 md:px-6
+          py-2 sm:py-3
+          text-xs sm:text-sm md:text-base
+          font-semibold
+          rounded-lg
+          text-white
+          bg-gradient-to-r from-gray-900 to-violet-900
+          transition-all duration-200
+          hover:scale-105 hover:shadow-lg
+          active:scale-95
+        "
           onClick={handleGptSearchClick}
         >
           {lang[langKey].search}
